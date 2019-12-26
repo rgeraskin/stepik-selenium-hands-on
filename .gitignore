@@ -1,0 +1,7 @@
+venv
+debug.log
+**/*.py.*.py
+.pytest_cache
+**/.idea
+**/.vscode
+**/__pycache__
