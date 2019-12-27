@@ -9,6 +9,7 @@ def pytest_addoption(parser):
                      default="es",
                      help="Choose language: es, fr etc")
 
+
 @pytest.fixture(scope="session")
 def browser(request):
     # language = "ru"

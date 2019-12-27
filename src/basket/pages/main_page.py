@@ -1,5 +1,3 @@
-from selenium.webdriver.common.by import By
-
 from basket.pages.base_page import BasePage
 from basket.pages.locators import MainPageLocators
 
