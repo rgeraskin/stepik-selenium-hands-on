@@ -25,3 +25,13 @@ class ProductPage(BasePage):
         # time.sleep(300)
         assert book_price_el.text == basket_price_el.text, \
             "Book price <> basket price"
+
+    def should_not_be_success_message1(self):
+        assert self.is_not_element_present(
+            *ProductPageLocators.MESSAGE_BOOK_ADDED_BOOK_NAME
+        ), "Success message is present"
+
+    def should_not_be_success_message2(self):
+        assert self.is_disappeared(
+            *ProductPageLocators.MESSAGE_BOOK_ADDED_BOOK_NAME
+        ), "Success message is not dissapeared"
