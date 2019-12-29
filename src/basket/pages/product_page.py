@@ -1,5 +1,3 @@
-import time
-
 from basket.pages.base_page import BasePage
 from basket.pages.locators import ProductPageLocators
 
@@ -22,7 +20,7 @@ class ProductPage(BasePage):
             *ProductPageLocators.BOOK_PRICE)
         basket_price_el = self.browser.find_element(
             *ProductPageLocators.MESSAGE_BASKET_PRICE)
-        # time.sleep(300)
+
         assert book_price_el.text == basket_price_el.text, \
             "Book price <> basket price"
 
