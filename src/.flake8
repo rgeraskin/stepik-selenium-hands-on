@@ -1,3 +1,0 @@
-[flake8]
-ignore = D204,W503,D401
-inline-quotes = double
