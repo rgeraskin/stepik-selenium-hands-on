@@ -2,10 +2,10 @@ import time
 
 import pytest
 
-from pages.basket_page import BasketPage
-from pages.login_page import LoginPage
-from pages.main_page import MainPage
-from pages.product_page import ProductPage
+from basket.pages.basket_page import BasketPage
+from basket.pages.login_page import LoginPage
+from basket.pages.main_page import MainPage
+from basket.pages.product_page import ProductPage
 
 
 @pytest.mark.TestUserAddToBasketFromProductPage
@@ -102,6 +102,7 @@ def test_message_disappeared_after_adding_product_to_basket(browser, link):
     page.add_to_basket()
     page.solve_quiz_and_get_code()
 
+    time.sleep(300)
     page.should_not_be_success_message2()
 
 

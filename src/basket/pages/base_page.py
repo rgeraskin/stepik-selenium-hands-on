@@ -7,7 +7,7 @@ from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
-from pages.locators import BasePageLocators
+from basket.pages.locators import BasePageLocators
 
 
 class BasePage():
